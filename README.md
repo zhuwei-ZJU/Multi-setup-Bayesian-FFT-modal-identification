@@ -85,8 +85,6 @@ posterior covariance matrix for band `ib`. Iteration histories and timings
 are also returned. Optional controls include `iband`, `tol_cvg`,
 `maxEMIter`, `maxNewtonIter`, and `dispsetup`.
 
-Small synthetic checks are in `tests/`.
-
 ## Data
 
 - Synthetic dataset: https://doi.org/10.7910/DVN/IVJCRU
