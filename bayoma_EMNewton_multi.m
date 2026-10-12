@@ -1,4 +1,10 @@
 function out = bayoma_EMNewton_multi(in)
+% If you use this program, please cite:
+% Wei Zhu, Bin-bin Li, Dong-Hui Yang, Ting-Hua Yi. Multi-setup Bayesian 
+% FFT modal identification with multiple modes leveraging on 
+% second order information[J]. 
+% Mechanical Systems and Signal Processing, 2026, 261: 115020.
+
 % Multi-setup Bayesian FFT modal identification by EM and Newton updates.
 % Required input fields:
 %   data{r}.tdata : samples x channels; data{r}.fs : sampling rate (Hz)
@@ -8,6 +14,13 @@ function out = bayoma_EMNewton_multi(in)
 % mode may contain one cell, in which case it is reused for every setup.
 % No XLS, DOF numbering, or setup file is required.
 % Output fields and band-wise aggregation follow the original implementation.
+
+% copyright statement
+disp('============================================');
+disp('Multi-setup BAYesian Operational Modal Analysis by EM and Newton updates');
+disp('-- Wei Zhu (weizhu321@hotmail.com) - Oct 12, 2026');
+disp('-- Binbin Li (bbl@zju.edu.cn) - Oct 12, 2026');
+disp('============================================');
 
 if ~isfield(in, 'tol_cvg') || isempty(in.tol_cvg), in.tol_cvg = 1e-3; end
 if ~isfield(in, 'minEMIter') || isempty(in.minEMIter), in.minEMIter = 10; end
