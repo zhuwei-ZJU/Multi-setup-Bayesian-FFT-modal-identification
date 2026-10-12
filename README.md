@@ -91,4 +91,4 @@ are also returned. Optional controls include `iband`, `tol_cvg`,
 - SEG Plaza dataset: https://doi.org/10.7910/DVN/PVXGGW
 
 ## Reference
-Zhu W, Li B, Yang D H, et al. Multi-setup Bayesian FFT modal identification with multiple modes leveraging on second order information[J]. Mechanical Systems and Signal Processing, 2026, 261: 115020. https://10.1016/j.ymssp.2026.115020
+Zhu W, Li B, Yang D H, et al. Multi-setup Bayesian FFT modal identification with multiple modes leveraging on second order information[J]. Mechanical Systems and Signal Processing, 2026, 261: 115020. https://doi.10.1016/j.ymssp.2026.115020
